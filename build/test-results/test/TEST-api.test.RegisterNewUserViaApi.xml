@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="api.test.RegisterNewUserViaApi" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-11-01T12:30:19" hostname="MARIA_DELL" time="3.132">
+  <properties/>
+  <testcase name="registerNewUserViaApi" classname="api.test.RegisterNewUserViaApi" time="3.132">
+    <failure message="java.lang.AssertionError: 1 expectation failed.&#10;Expected status code &lt;201&gt; but was &lt;301&gt;.&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;201&gt; but was &lt;301&gt;.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at api.ApiBase.postRequest(ApiBase.java:62)
+	at api.AuthorizationAPI.registerUser(AuthorizationAPI.java:40)
+	at api.test.RegisterNewUserViaApi.registerNewUserViaApi(RegisterNewUserViaApi.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:145)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:92)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <system-out><![CDATA[Request method:	POST
+Request URI:	http://demoqa.com/Account/v1/User
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "85a6d493-c811-4f86-a1af-29663a94c0fc",
+    "userName": "85a6d493-c811-4f86-a1af-29663a94c0fc",
+    "password": "j4RMm98*L"
+}
+13:30:22.009 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {}->http://demoqa.com:80
+13:30:22.038 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to demoqa.com:80
+13:30:22.099 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+13:30:22.101 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+13:30:22.101 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication -- Target auth state: UNCHALLENGED
+13:30:22.102 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+13:30:22.102 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+13:30:22.102 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /Account/v1/User HTTP/1.1
+13:30:22.104 [Test worker] DEBUG org.apache.http.wire --  >> "POST /Account/v1/User HTTP/1.1[\r][\n]"
+13:30:22.108 [Test worker] DEBUG org.apache.http.wire --  >> "Accept: */*[\r][\n]"
+13:30:22.108 [Test worker] DEBUG org.apache.http.wire --  >> "Content-Type: application/json[\r][\n]"
+13:30:22.108 [Test worker] DEBUG org.apache.http.wire --  >> "Content-Length: 124[\r][\n]"
+13:30:22.109 [Test worker] DEBUG org.apache.http.wire --  >> "Host: demoqa.com[\r][\n]"
+13:30:22.109 [Test worker] DEBUG org.apache.http.wire --  >> "Connection: Keep-Alive[\r][\n]"
+13:30:22.109 [Test worker] DEBUG org.apache.http.wire --  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)[\r][\n]"
+13:30:22.109 [Test worker] DEBUG org.apache.http.wire --  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+13:30:22.109 [Test worker] DEBUG org.apache.http.wire --  >> "[\r][\n]"
+13:30:22.109 [Test worker] DEBUG org.apache.http.headers -- >> POST /Account/v1/User HTTP/1.1
+13:30:22.109 [Test worker] DEBUG org.apache.http.headers -- >> Accept: */*
+13:30:22.109 [Test worker] DEBUG org.apache.http.headers -- >> Content-Type: application/json
+13:30:22.109 [Test worker] DEBUG org.apache.http.headers -- >> Content-Length: 124
+13:30:22.109 [Test worker] DEBUG org.apache.http.headers -- >> Host: demoqa.com
+13:30:22.109 [Test worker] DEBUG org.apache.http.headers -- >> Connection: Keep-Alive
+13:30:22.109 [Test worker] DEBUG org.apache.http.headers -- >> User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+13:30:22.109 [Test worker] DEBUG org.apache.http.headers -- >> Accept-Encoding: gzip,deflate
+13:30:22.110 [Test worker] DEBUG org.apache.http.wire --  >> "{"username":"85a6d493-c811-4f86-a1af-29663a94c0fc","userName":"85a6d493-c811-4f86-a1af-29663a94c0fc","password":"j4RMm98*L"}"
+13:30:22.148 [Test worker] DEBUG org.apache.http.wire --  << "HTTP/1.1 301 Moved Permanently[\r][\n]"
+13:30:22.149 [Test worker] DEBUG org.apache.http.wire --  << "Server: nginx/1.17.10 (Ubuntu)[\r][\n]"
+13:30:22.149 [Test worker] DEBUG org.apache.http.wire --  << "Date: Wed, 01 Nov 2023 12:30:22 GMT[\r][\n]"
+13:30:22.149 [Test worker] DEBUG org.apache.http.wire --  << "Content-Type: text/html[\r][\n]"
+13:30:22.150 [Test worker] DEBUG org.apache.http.wire --  << "Content-Length: 179[\r][\n]"
+13:30:22.150 [Test worker] DEBUG org.apache.http.wire --  << "Connection: keep-alive[\r][\n]"
+13:30:22.150 [Test worker] DEBUG org.apache.http.wire --  << "Location: https://demoqa.com/Account/v1/User[\r][\n]"
+13:30:22.150 [Test worker] DEBUG org.apache.http.wire --  << "[\r][\n]"
+13:30:22.150 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 301 Moved Permanently
+13:30:22.150 [Test worker] DEBUG org.apache.http.headers -- << HTTP/1.1 301 Moved Permanently
+13:30:22.150 [Test worker] DEBUG org.apache.http.headers -- << Server: nginx/1.17.10 (Ubuntu)
+13:30:22.150 [Test worker] DEBUG org.apache.http.headers -- << Date: Wed, 01 Nov 2023 12:30:22 GMT
+13:30:22.150 [Test worker] DEBUG org.apache.http.headers -- << Content-Type: text/html
+13:30:22.150 [Test worker] DEBUG org.apache.http.headers -- << Content-Length: 179
+13:30:22.150 [Test worker] DEBUG org.apache.http.headers -- << Connection: keep-alive
+13:30:22.151 [Test worker] DEBUG org.apache.http.headers -- << Location: https://demoqa.com/Account/v1/User
+13:30:22.155 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+13:30:22.164 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: text/html
+13:30:22.164 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+13:30:22.219 [Test worker] DEBUG org.apache.http.wire --  << "<html>[\r][\n]"
+13:30:22.220 [Test worker] DEBUG org.apache.http.wire --  << "<head><title>301 Moved Permanently</title></head>[\r][\n]"
+13:30:22.220 [Test worker] DEBUG org.apache.http.wire --  << "<body>[\r][\n]"
+13:30:22.220 [Test worker] DEBUG org.apache.http.wire --  << "<center><h1>301 Moved Permanently</h1></center>[\r][\n]"
+13:30:22.220 [Test worker] DEBUG org.apache.http.wire --  << "<hr><center>nginx/1.17.10 (Ubuntu)</center>[\r][\n]"
+13:30:22.220 [Test worker] DEBUG org.apache.http.wire --  << "</body>[\r][\n]"
+13:30:22.220 [Test worker] DEBUG org.apache.http.wire --  << "</html>[\r][\n]"
+13:30:22.221 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@cb1c58c
+13:30:22.221 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive indefinitely
+HTTP/1.1 301 Moved Permanently
+Server: nginx/1.17.10 (Ubuntu)
+Date: Wed, 01 Nov 2023 12:30:22 GMT
+Content-Type: text/html
+Content-Length: 179
+Connection: keep-alive
+Location: https://demoqa.com/Account/v1/User
+
+<html>
+  <head>
+    <title>301 Moved Permanently</title>
+  </head>
+  <body>
+    <center>
+      <h1>301 Moved Permanently</h1>
+    </center>
+    <hr/>
+    <center>nginx/1.17.10 (Ubuntu)</center>
+  </body>
+</html>
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

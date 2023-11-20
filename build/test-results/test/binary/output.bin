@@ -1,0 +1,94 @@
+Request method:	POST
+0Request URI:	http://demoqa.com/Account/v1/User
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+#				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+8    "username": "85a6d493-c811-4f86-a1af-29663a94c0fc",
+8    "userName": "85a6d493-c811-4f86-a1af-29663a94c0fc",
+    "password": "j4RMm98*L"
+}
+Ž13:30:22.009 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Get connection for route {}->http://demoqa.com:80
+{13:30:22.038 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator -- Connecting to demoqa.com:80
+z13:30:22.099 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies -- CookieSpec selected: ignoreCookies
+x13:30:22.101 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache -- Auth cache not set in the context
+13:30:22.101 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication -- Target auth state: UNCHALLENGED
+13:30:22.102 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication -- Proxy auth state: UNCHALLENGED
+p13:30:22.102 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Attempt 1 to execute request
+‡13:30:22.102 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Sending request: POST /Account/v1/User HTTP/1.1
+g13:30:22.104 [Test worker] DEBUG org.apache.http.wire --  >> "POST /Account/v1/User HTTP/1.1[\r][\n]"
+T13:30:22.108 [Test worker] DEBUG org.apache.http.wire --  >> "Accept: */*[\r][\n]"
+g13:30:22.108 [Test worker] DEBUG org.apache.http.wire --  >> "Content-Type: application/json[\r][\n]"
+\13:30:22.108 [Test worker] DEBUG org.apache.http.wire --  >> "Content-Length: 124[\r][\n]"
+Y13:30:22.109 [Test worker] DEBUG org.apache.http.wire --  >> "Host: demoqa.com[\r][\n]"
+_13:30:22.109 [Test worker] DEBUG org.apache.http.wire --  >> "Connection: Keep-Alive[\r][\n]"
+{13:30:22.109 [Test worker] DEBUG org.apache.http.wire --  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)[\r][\n]"
+f13:30:22.109 [Test worker] DEBUG org.apache.http.wire --  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+I13:30:22.109 [Test worker] DEBUG org.apache.http.wire --  >> "[\r][\n]"
+_13:30:22.109 [Test worker] DEBUG org.apache.http.headers -- >> POST /Account/v1/User HTTP/1.1
+L13:30:22.109 [Test worker] DEBUG org.apache.http.headers -- >> Accept: */*
+_13:30:22.109 [Test worker] DEBUG org.apache.http.headers -- >> Content-Type: application/json
+T13:30:22.109 [Test worker] DEBUG org.apache.http.headers -- >> Content-Length: 124
+Q13:30:22.109 [Test worker] DEBUG org.apache.http.headers -- >> Host: demoqa.com
+W13:30:22.109 [Test worker] DEBUG org.apache.http.headers -- >> Connection: Keep-Alive
+s13:30:22.109 [Test worker] DEBUG org.apache.http.headers -- >> User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.2)
+^13:30:22.109 [Test worker] DEBUG org.apache.http.headers -- >> Accept-Encoding: gzip,deflate
+½13:30:22.110 [Test worker] DEBUG org.apache.http.wire --  >> "{"username":"85a6d493-c811-4f86-a1af-29663a94c0fc","userName":"85a6d493-c811-4f86-a1af-29663a94c0fc","password":"j4RMm98*L"}"
+g13:30:22.148 [Test worker] DEBUG org.apache.http.wire --  << "HTTP/1.1 301 Moved Permanently[\r][\n]"
+g13:30:22.149 [Test worker] DEBUG org.apache.http.wire --  << "Server: nginx/1.17.10 (Ubuntu)[\r][\n]"
+l13:30:22.149 [Test worker] DEBUG org.apache.http.wire --  << "Date: Wed, 01 Nov 2023 12:30:22 GMT[\r][\n]"
+`13:30:22.149 [Test worker] DEBUG org.apache.http.wire --  << "Content-Type: text/html[\r][\n]"
+\13:30:22.150 [Test worker] DEBUG org.apache.http.wire --  << "Content-Length: 179[\r][\n]"
+_13:30:22.150 [Test worker] DEBUG org.apache.http.wire --  << "Connection: keep-alive[\r][\n]"
+u13:30:22.150 [Test worker] DEBUG org.apache.http.wire --  << "Location: https://demoqa.com/Account/v1/User[\r][\n]"
+I13:30:22.150 [Test worker] DEBUG org.apache.http.wire --  << "[\r][\n]"
+Š13:30:22.150 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection -- Receiving response: HTTP/1.1 301 Moved Permanently
+_13:30:22.150 [Test worker] DEBUG org.apache.http.headers -- << HTTP/1.1 301 Moved Permanently
+_13:30:22.150 [Test worker] DEBUG org.apache.http.headers -- << Server: nginx/1.17.10 (Ubuntu)
+d13:30:22.150 [Test worker] DEBUG org.apache.http.headers -- << Date: Wed, 01 Nov 2023 12:30:22 GMT
+X13:30:22.150 [Test worker] DEBUG org.apache.http.headers -- << Content-Type: text/html
+T13:30:22.150 [Test worker] DEBUG org.apache.http.headers -- << Content-Length: 179
+W13:30:22.150 [Test worker] DEBUG org.apache.http.headers -- << Connection: keep-alive
+m13:30:22.151 [Test worker] DEBUG org.apache.http.headers -- << Location: https://demoqa.com/Account/v1/User
+}13:30:22.155 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient -- Connection can be kept alive indefinitely
+s13:30:22.164 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsing response as: text/html
+ 13:30:22.164 [Test worker] DEBUG io.restassured.internal.RestAssuredHttpBuilder -- Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+O13:30:22.219 [Test worker] DEBUG org.apache.http.wire --  << "<html>[\r][\n]"
+z13:30:22.220 [Test worker] DEBUG org.apache.http.wire --  << "<head><title>301 Moved Permanently</title></head>[\r][\n]"
+O13:30:22.220 [Test worker] DEBUG org.apache.http.wire --  << "<body>[\r][\n]"
+x13:30:22.220 [Test worker] DEBUG org.apache.http.wire --  << "<center><h1>301 Moved Permanently</h1></center>[\r][\n]"
+t13:30:22.220 [Test worker] DEBUG org.apache.http.wire --  << "<hr><center>nginx/1.17.10 (Ubuntu)</center>[\r][\n]"
+P13:30:22.220 [Test worker] DEBUG org.apache.http.wire --  << "</body>[\r][\n]"
+P13:30:22.220 [Test worker] DEBUG org.apache.http.wire --  << "</html>[\r][\n]"
+¯13:30:22.221 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@cb1c58c
+†13:30:22.221 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager -- Connection can be kept alive indefinitely
+ HTTP/1.1 301 Moved Permanently
+ Server: nginx/1.17.10 (Ubuntu)
+%Date: Wed, 01 Nov 2023 12:30:22 GMT
+Content-Type: text/html
+Content-Length: 179
+Connection: keep-alive
+.Location: https://demoqa.com/Account/v1/User
+
+<html>
+	  <head>
+)    <title>301 Moved Permanently</title>
+
+  </head>
+	  <body>
+    <center>
+%      <h1>301 Moved Permanently</h1>
+    </center>
+
+    <hr/>
+,    <center>nginx/1.17.10 (Ubuntu)</center>
+
+  </body>
+	</html>
